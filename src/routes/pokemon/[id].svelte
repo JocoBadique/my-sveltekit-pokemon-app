@@ -1,5 +1,5 @@
 <script context="module">
-    export async function load(page) {
+    export async function load({page}) {
         const id = page.params.id;
         const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
         const res = await fetch(url); 
